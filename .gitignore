@@ -1,0 +1,14 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
+# Ignore IDE files
+**/.idea/
+**/__pycache__/
+**/cmake-build-debug/
+**/cmake-build-release/

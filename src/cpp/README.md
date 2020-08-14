@@ -1,16 +1,11 @@
-# C++ implementation
-This part of the project showcases the construction of applications that
-support encrypted inputs. As explained in the report, **classification**
-and **search** are taken as examples.
-
 ## Requirements
-The project requires two libraries.
+The project requires one library.
 - [TFHE](https://github.com/tfhe/tfhe)
 
 ## HOW TO COMPILE  
-#### CLASSIFICATION
+#### CLASSIFICATION MNIST
 ``` g++ classification_mnist.cpp -Ofast -o classification_mnist -ltfhe-spqlios-fma -fopenmp```  
-#### SEARCH  
+#### CLASSIFICATION BREAST CANCER WISCONSIN
 ``` g++ classification_breast.cpp -Ofast -o classification_breast -ltfhe-spqlios-fma -fopenmp```  
 
 Note the libraries are assumed to be installed in their default location (/usr/local/lib).    
@@ -18,7 +13,7 @@ Note the libraries are assumed to be installed in their default location (/usr/l
 ## HOW TO RUN  
 #### CLASSIFICATION MNIST
 ``` ./classification_mnist [mode] [end] [start] [threads]```
-#### CLASSIFICATION BREAST CABCER WISCONSIN
+#### CLASSIFICATION BREAST CANCER WISCONSIN
 ``` ./classification_breast [end] [start] [threads]```    
 where:
 - [mode] **bool**:  
